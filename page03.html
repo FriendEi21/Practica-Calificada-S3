@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 03 - Práctica 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'sm': '480px',
+                        'md': '900px',
+                        'lg': '1200px',
+                        'xl': '1201px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#f0ece3] m-0 p-0 font-serif">
+
+    <div class="bg-[#6b705c] text-center text-sm text-white py-2">
+        -15% en tu primera compra <a href="#" class="border border-white px-2 py-1 ml-2 text-xs">Registrarse</a>
+    </div>
+
+    <header class="bg-black text-white px-8 py-6 flex justify-between items-start">
+        <nav class="flex gap-6 text-sm mt-2">
+            <a href="#" class="text-[#f4a261]">Plantas</a>
+            <a href="#" class="hover:text-[#f4a261]">Macetas</a>
+            <a href="#" class="hover:text-[#f4a261]">Oferta</a>
+            <a href="#" class="hover:text-[#f4a261]">Suscripciones</a>
+            <a href="#" class="hover:text-[#f4a261]">Cuidado</a>
+        </nav>
+        <div class="flex-grow text-center">
+            <h1 class="text-5xl font-light tracking-wide mt-10">Plantas</h1>
+        </div>
+        <div class="flex gap-6 text-sm mt-2 items-center">
+            <a href="#" class="flex items-center gap-2"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>Entrar</a>
+            <a href="#"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></a>
+            <a href="#" class="flex items-center gap-2"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>Carrito 0</a>
+        </div>
+    </header>
+
+    <main class="max-w-[1200px] mx-auto px-8 py-16">
+        
+        <div class="flex justify-between items-center mb-12">
+            <h2 class="text-4xl">Recién llegados</h2>
+            <button class="bg-[#d07b3b] text-white px-6 py-2 text-sm hover:bg-[#b06730] transition-colors">Comprar todo</button>
+        </div>
+
+        <div class="flex flex-wrap justify-between gap-6">
+            
+            <div class="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] mb-8 group">
+                <div class="bg-[#e4dfd4] relative h-[300px] flex justify-center items-center overflow-hidden mb-4">
+                    <span class="absolute top-4 left-4 bg-[#6b705c] text-white text-xs px-2 py-1 z-10">Recién llegado</span>
+                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80" alt="Ficus lyrata" class="h-[80%] object-contain mix-blend-multiply opacity-85 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <h3 class="text-xl mb-1">Ficus lyrata</h3>
+                <p class="mb-4">$699.99</p>
+                <button class="w-full border border-black py-2 hover:bg-black hover:text-white transition-colors">Agregar al carrito</button>
+            </div>
+
+            <div class="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] mb-8 group">
+                <div class="bg-[#e4dfd4] relative h-[300px] flex justify-center items-center overflow-hidden mb-4">
+                    <span class="absolute top-4 left-4 bg-[#6b705c] text-white text-xs px-2 py-1 z-10">Recién llegado</span>
+                    <img src="images/macetao.jpg" alt="Maceta oxidada" class="h-[60%] object-contain mix-blend-multiply opacity-85 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <h3 class="text-xl mb-1">Maceta oxidada</h3>
+                <p class="mb-4">$399.99</p>
+                <button class="w-full border border-black py-2 hover:bg-black hover:text-white transition-colors">Agregar al carrito</button>
+            </div>
+
+            <div class="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] mb-8 group">
+                <div class="bg-[#e4dfd4] relative h-[300px] flex justify-center items-center overflow-hidden mb-4">
+                    <span class="absolute top-4 left-4 bg-[#6b705c] text-white text-xs px-2 py-1 z-10">Recién llegado</span>
+                    <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&q=80" alt="Cactus" class="h-[80%] object-contain mix-blend-multiply opacity-85 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <h3 class="text-xl mb-1">Cactus</h3>
+                <p class="mb-4">$399.99</p>
+                <button class="w-full border border-black py-2 hover:bg-black hover:text-white transition-colors">Agregar al carrito</button>
+            </div>
+
+            <div class="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] mb-8 group">
+                <div class="bg-[#e4dfd4] relative h-[300px] flex justify-center items-center overflow-hidden mb-4">
+                    <span class="absolute top-4 left-4 bg-[#6b705c] text-white text-xs px-2 py-1 z-10">Recién llegado</span>
+                    <img src="images/cesto.jpg" alt="Cesto de madera" class="h-[60%] object-contain mix-blend-multiply opacity-85 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <h3 class="text-xl mb-1">Cesto de madera</h3>
+                <p class="mb-4">$559.99</p>
+                <button class="w-full border border-black py-2 hover:bg-black hover:text-white transition-colors">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-12 px-8 mt-12 text-sm font-sans">
+        <div class="max-w-[1200px] mx-auto flex flex-wrap justify-between gap-8">
+            <div>
+                <h4 class="font-bold mb-4">Tienda</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Comprar todo</a></li>
+                    <li><a href="#" class="hover:text-white">Plantas</a></li>
+                    <li><a href="#" class="hover:text-white">Macetas</a></li>
+                    <li><a href="#" class="hover:text-white">Oferta</a></li>
+                    <li><a href="#" class="hover:text-white">Suscripciones</a></li>
+                    <li><a href="#" class="hover:text-white">Cuidado</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Enlaces útiles</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white">Envío y devoluciones</a></li>
+                    <li><a href="#" class="hover:text-white">Términos y condiciones</a></li>
+                    <li><a href="#" class="hover:text-white">Métodos de pago</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contacto</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Dirección: Av. Fray A</li>
+                    <li>Alcalde 10 44100</li>
+                    <li>Guadalajara, Jal, México</li>
+                    <li class="mt-4">Tel: +52-1-33-12345678</li>
+                    <li>Email: info@misitio.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Empresa</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Nosotros</a></li>
+                    <li><a href="#" class="hover:text-white">Contactanos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Horarios</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Lun-Vie: 7:00-22:00</li>
+                    <li>Sábado: 8:00-22:00</li>
+                    <li>Domingo: 8:00-23:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-[1200px] mx-auto mt-12 text-center text-gray-600 text-xs">
+            2026 Creado por
+        </div>
+        <div class="fixed bottom-4 right-4 bg-[#6b705c] p-3 rounded-md cursor-pointer hover:bg-[#5a5f4c]">
+            <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/><path d="M7 9h10v2H7zm0-3h10v2H7zm0 6h7v2H7z"/></svg>
+        </div>
+    </footer>
+
+</body>
+</html>
